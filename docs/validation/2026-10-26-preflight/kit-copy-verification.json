@@ -1,0 +1,67 @@
+{
+    "verified_at_utc":  "2026-10-26T13:38:52.5742610Z",
+    "scope":  "Read KI.md completely and copy the unchanged authored Python kit; stop before Arena launch.",
+    "source_root":  "C:\\Users\\lrt71\\Black Stars - The M87 Conflict\\Tools\\GroundArenaTraining",
+    "destination_root":  "C:\\Users\\lrt71\\Desktop\\Agent M87\\Python\\reference",
+    "ki_read":  {
+                    "path":  "C:\\Users\\lrt71\\Black Stars - The M87 Conflict\\Markdown\\KI.md",
+                    "bytes":  567570,
+                    "lines":  6394,
+                    "utf16_characters":  560176,
+                    "read_interval":  "[0,560176)",
+                    "sha256":  "B6F75B0863D35AF3AA5D7CD9541F0E970969C3EBCA4B57B43F5B6BACD57DCB2F",
+                    "hash_unchanged_after_read":  true
+                },
+    "documented_protocol":  "blackstars-ground-arena/1",
+    "runtime_protocol_verified":  false,
+    "arena_launched":  false,
+    "smoke_test_run":  false,
+    "client_tests_run":  false,
+    "dependencies_installed":  false,
+    "provider_calls_made":  false,
+    "game_project_modified":  false,
+    "files":  [
+                  {
+                      "relative_path":  ".gitignore",
+                      "bytes":  35,
+                      "source_sha256":  "6909A60E56B384EC8FE674B59C02D3E54B4711735BAE3A12181A0069D33DF815",
+                      "destination_sha256":  "6909A60E56B384EC8FE674B59C02D3E54B4711735BAE3A12181A0069D33DF815",
+                      "identical":  true
+                  },
+                  {
+                      "relative_path":  "ground_arena_client.py",
+                      "bytes":  16843,
+                      "source_sha256":  "6A2EEB8B5EC9CF0D4E443956371C056CBE293246B6DE2FC5EA6E75A83F07DFF3",
+                      "destination_sha256":  "6A2EEB8B5EC9CF0D4E443956371C056CBE293246B6DE2FC5EA6E75A83F07DFF3",
+                      "identical":  true
+                  },
+                  {
+                      "relative_path":  "smoke_test.py",
+                      "bytes":  6855,
+                      "source_sha256":  "B12196197089D3AB340B25200355C48CEF384133F25A197EC410B1F410EC0FB1",
+                      "destination_sha256":  "B12196197089D3AB340B25200355C48CEF384133F25A197EC410B1F410EC0FB1",
+                      "identical":  true
+                  },
+                  {
+                      "relative_path":  "README.md",
+                      "bytes":  10310,
+                      "source_sha256":  "F6E240E35A8F1594D42C89EFE057A6EF8811076236C89B4A2BA569CA340FFC2B",
+                      "destination_sha256":  "F6E240E35A8F1594D42C89EFE057A6EF8811076236C89B4A2BA569CA340FFC2B",
+                      "identical":  true
+                  },
+                  {
+                      "relative_path":  "PROTOCOL.md",
+                      "bytes":  8820,
+                      "source_sha256":  "2A5916282DAE28A68DF7B9844E3F1F2245C33E640AB3CE98C3B978F23B4E4FB9",
+                      "destination_sha256":  "2A5916282DAE28A68DF7B9844E3F1F2245C33E640AB3CE98C3B978F23B4E4FB9",
+                      "identical":  true
+                  },
+                  {
+                      "relative_path":  "tests/test_client.py",
+                      "bytes":  18936,
+                      "source_sha256":  "623FAFADD0152B35B85B53F119E5B4B5394B47DC580CCD215EDE242E0C9C7B47",
+                      "destination_sha256":  "623FAFADD0152B35B85B53F119E5B4B5394B47DC580CCD215EDE242E0C9C7B47",
+                      "identical":  true
+                  }
+              ]
+}

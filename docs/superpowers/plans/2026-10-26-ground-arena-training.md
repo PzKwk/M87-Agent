@@ -27,13 +27,13 @@
 
 The game `AGENTS.md`, `Markdown/GroundArenaTraining.md`, kit `README.md` and `PROTOCOL.md`, `Markdown/GroundArena.md`, and training validation report were read. The complete Python client and smoke test were inspected, along with selected transport tests and targeted Arena host/session/rules/build-hook source.
 
-`Markdown/KI.md` contains 6,394 lines / 567,570 bytes. Current Arena, shared hit/upkeep, fairness and ground-AI material was inspected; some broad reads were truncated. A complete, continuous review is not claimed. Finish that read in preflight; in particular, never propose AI-rule changes on the basis of these excerpts. This plan changes no AI/game rules.
+`Markdown/KI.md` contains 6,394 lines / 567,570 bytes. On 2026-10-26, the complete file was read in consecutive, untruncated sections covering all 560,176 UTF-16 characters. Its SHA-256 remained `B6F75B0863D35AF3AA5D7CD9541F0E970969C3EBCA4B57B43F5B6BACD57DCB2F` before and after the read. Current rules are distinguished from historical entries. This plan changes no AI/game rules.
 
 Observed locally:
 
 - Both build folders contain an executable, matching data folder, UnityPlayer and Mono runtime. This is structural inspection, not proof of a complete or compatible working build.
-- Neither build folder contains the documented `GroundArenaTraining` kit. Its authored source exists in the read-only game project and can be copied into `Python/reference/`.
-- `Python/` and `Models/` are empty. The training root is not currently a Git repository.
+- Neither build folder contains the documented `GroundArenaTraining` kit. Its six authored files were copied unchanged from the read-only game project into `Python/reference/`; all source/destination SHA-256 hashes match. Evidence: `docs/validation/2026-10-26-preflight/kit-copy-verification.json`.
+- `Python/` was initially empty and now contains that reference kit. `Models/` remains empty. The training root is not currently a Git repository.
 - Python reports `3.13.2`.
 - Training build GUID in `boot.config`: `679b43b7ff514609a52047d6b0fe19e0`.
 - Training EXE SHA-256: `246EB2CC741F8B9E93381272C356F4A5C99F01F48440E83B69EE1280DD933CC5`.
@@ -96,8 +96,8 @@ Initial opponents remain the existing deterministic AI. Do not reimplement or al
 
 **Deliverable:** A reproducible real Unity smoke report, or an exact runtime blocker with logs. This is the first execution milestone.
 
-- [ ] Finish the untruncated `KI.md` read, keeping current rules distinct from historical entries. No rule changes are needed.
-- [ ] Copy only the authored kit files into `Python/reference/`; compare source/destination hashes. Do not copy `.env`, `__pycache__` or game dependencies.
+- [x] Finish the untruncated `KI.md` read, keeping current rules distinct from historical entries. No rule changes are needed.
+- [x] Copy only the authored kit files into `Python/reference/`; compare source/destination hashes. Do not copy `.env`, `__pycache__` or game dependencies.
 - [ ] Inventory the full training build and record hashes of runtime assemblies, configuration/data files and runtime libraries, not just the generic Unity EXE. Record the source/protocol hashes separately; do not assert source/binary equivalence without evidence.
 - [ ] Reserve a new workspace run folder. Set Python temp/cache paths inside the workspace. Arrange Unity logging into the run output rather than its default user-profile log, and verify that arrangement.
 - [ ] Run the existing smoke test unchanged against `TrainingsArena/GroundArenaServer.exe`: initial `--episodes 2 --max-steps 500 --ticks 4 --seed 87 --control attacker`, with explicit absolute `--build` and `--runs` paths. Launch the Arena directly, leaving the TypeSafe launcher/service unused.
